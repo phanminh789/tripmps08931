@@ -1,0 +1,13 @@
+.gopy{
+    font-size: 35px;
+    color: black;
+    text-align: justify;
+   
+}
+body{
+    background-color: rgb(209, 209, 209);    
+    font-family: 'Saira', sans-serif;
+    transition: 1s;
+}
+
+

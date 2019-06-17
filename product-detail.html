@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Detail</title>
+    <style>
+        .button {
+            position: relative;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <link href="css/product-detail.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="js/product-detail.js"></script>
+</head>
+
+<body onload="loadProduct()">
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=677762476001155">
+        </script>
+    <div class="col-30">
+        <div class="product-img-frame">
+
+            <img id="product-img" />
+        </div>
+
+        <div class="product-buttons">
+            <button style="background-color: white;"><img style="cursor: pointer;width: 60px;height: 60px;"
+                src="../ASS WEBSITE/img/icons8-heart-64.png"
+                id="btnLike"></button>
+            <button style="background-color: white;"><img style="cursor: pointer;width: 60px;height: 60px;"
+                src="../ASS WEBSITE/img/icons8-add-shopping-cart-64.png"
+                id="btnBuy"></button>
+        </div>
+    </div>
+
+    <div class="col-70">
+        <br />
+        <br />
+        <br />
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <h1>Specifications</h1> -->
+
+        <table id="product-info">
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+    <div class="wrapper">
+        <button id="btnGoback" class="button" onclick="goBack()">
+            <img src="../ASS WEBSITE/img/icons8-back-arrow-96.png">
+        </button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <h2>Bình luận về sản phẩm:</h2>
+    <br>
+    <div class="fb-comments" data-href="https://www.facebook.com/Tri-Designer-886618851677559/?modal=admin_todo_tour"
+        data-width="100%" data-numposts="5">
+    </div>
+</body>
+
+</html>

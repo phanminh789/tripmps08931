@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="css/form.css" rel="stylesheet" type="text/css" />
+</head> 
+<body>
+    <h2>Sign up</h2>
+    <div class="formContainer">
+    <form id="FormDangKy" method="post">
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="tenTaiKhoan">Username</label>
+                </div>
+                <div class="Col-75">
+                    <input type="text" id="TenTaiKhoan" name="tenTaiKhoan" placeholder="Enter your name">
+                </div>
+            </div>
+            
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="gioiTinh">Gender</label>
+                </div>
+                <div class="Col-75">
+                    <label><input id="GenderM" type="radio" name="gender" value="male"> Male </label>
+                    <label><input id="GenderF" type="radio" name="gender" value="female"> Female </label>
+                </div>
+            </div>
+            
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="ngaySinh">Birthday</label>
+                </div>
+                <div class="Col-75">
+                    <input type="date" name="date" placeholder="mm/dd/yyyy">
+                </div>
+                <br>
+            </div>
+            
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="ngheNghiep">Career</label>
+                </div>
+                <div class="Col-75">
+                    <input id="List" list="careers" name="career">
+                        <datalist id="careers">
+                            <option value="Salesman">
+                            <option value="Teacher">
+                            <option value="Student">
+                            <option value="Chef">
+                            <option value="Programer">
+                        </datalist>
+                </div>
+                <br>
+            </div>
+            
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="CMND">Identity card number</label>
+                </div>
+                <div class="Col-75">
+                    <input type="text" id="CMND" name="CMND" placeholder="Enter your card number">
+                </div>
+            </div>
+            
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="Col-75">
+                    <input type="text" id="Email" name="email" placeholder="Enter your email">
+                </div>
+            </div>
+            
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="matKhau">Password</label>
+                </div>
+                <div class="Col-75">
+                    <input type="password" id="MatKhau" name="matKhau" placeholder="Enter your password"><br>
+                </div>
+            </div>
+            <br>
+                    <div class="Row">
+                    <button class="button" onclick="traloi=confirm('Are you sure you want to sign up?')";><span>Sign up</span></button>
+                    </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿.column{
+    width:25%;
+    float:left;
+}
+.san-pham{
+    border-radius:10px;
+    box-shadow:0 0 5px gray;
+    padding:10px;
+    margin:5px;
+    text-align:center;
+}
+.san-pham .ten{
+    font-size:larger;
+    font-variant:small-caps;
+    color:blue;
+}
+.san-pham img{
+    max-width: 95%;
+}
+.san-pham .gia{
+    color:red;
+    font-weight:bold;
+    font-size:larger;
+}
+.san-pham .gia del{
+    color:gray;
+}
+.buttons>button{
+    background-color: white;
+    border-radius: 40px;
+    border:0px;
+    outline: none;
+    box-shadow: inset 0 0 20px blue;
+    padding: 5px 20px;
+}
+.buttons>button:hover{
+    box-shadow: inset 0 0 20px red;
+}
+body{
+    text-align: center;
+    font-family: 'Saira', sans-serif;
+    transition: 1s;
+}
+.san-pham>img:hover{
+    box-shadow:0 0 20px red;
+}
+.Row{
+    width: 100%;
+    height: 300px;
+}

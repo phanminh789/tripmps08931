@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="css/form.css" rel="stylesheet"  type="text/css"/>
+    <style>
+            .button {
+              border-radius: 2px;
+              background-color: black;
+              border: none;
+              color: #FFFFFF;
+              text-align: center;
+              font-size: 18px;
+              padding: 5px;
+              width: 150px;
+              transition: all 0.5s;
+              cursor: pointer;
+              margin: 5px;
+              float: right;
+            }
+            
+            .button span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .button span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .button:hover span{
+              padding-right: 25px;
+            }
+            
+            .button:hover span:after {
+              opacity: 1;
+              right: 0;
+              background-color: rgb(70, 70, 70);
+            }
+            .button:hover{
+                background-color: rgb(70, 70, 70);
+            }
+            </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <div class="formContainer">
+    <form id="FormDangNhap" action="" method="post" >
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="username">Username</label>
+                </div>
+                <div class="Col-75">
+                    <input class="form-control" type="text" id="username" name="tenTaiKhoan" placeholder="Enter Username">
+                </div>
+            </div>
+            
+            <div class="Row">
+                <div class="Col-25">
+                    <label for="pass">Password</label>
+                </div>
+                <div class="Col-75">
+                    <input class="form-control" type="password" id="password" name="matKhau" placeholder="Enter your password"><br><br>
+                    <input class="form-control" type="checkbox" id="Remember" name="Remember"><strong>Remember password?</strong>
+                </div>
+            </div>
+                            
+            <div class="Row">
+                    <button class="button" onclick="traloi=confirm('Are you sure you want to sign up?')";><span>Login</span></button>
+                    </div>
+        </form>
+    </div>
+</body>
+</html>
