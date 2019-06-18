@@ -28,7 +28,7 @@ body{
     float: left;
 }
 .container>aside{
-    min-height: 1000px;
+    min-height: 1003px;
     width: 25%;
     background-color: lightgray;
     float: right; 
