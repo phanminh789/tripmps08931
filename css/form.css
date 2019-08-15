@@ -149,5 +149,16 @@ body {
     background-color: rgb(70, 70, 70);
   }
   .button:hover{
+      animation-name: btnSignup;
+      animation-duration: 1000ms;
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes btnSignup{
+    100%{
       background-color: rgb(70, 70, 70);
+    }
+  }
+  #careers{
+    width: 939px;
   }

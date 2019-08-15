@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ElcShopOnline</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/SlideShow.js"></script>
     <link href="css/index.css" rel="stylesheet"/>
+    <link href="css/SlideShow.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style> 
         input[type=text] {
-          width: 130px;
-          box-sizing: border-box;
-          border: 2px solid #ccc;
-          border-radius: 4px;
-          font-size: 16px;
-          background-color: white;
-          background-image: url('searchicon.png');
-          background-position: 10px 10px; 
-          background-repeat: no-repeat;
-          padding: 12px 20px 12px 40px;
-          -webkit-transition: width 0.4s ease-in-out;
-          transition: width 0.4s ease-in-out;
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
         }
         
         input[type=text]:focus {
-          width: 23%;
+            width: 23%;
         }
         </style>
 
@@ -35,20 +38,35 @@
     <div class="container">
         <header>
                         <center style="font-size: 30px; color: white;">
-                            <script>var myVar = setInterval(function () { myTimer() }, 1000); function myTimer() { var d = new Date(); var t = d.toLocaleTimeString(); document.getElementById("h").innerHTML = t; }</script>
+                            <script>
+                                var myVar = setInterval(function () { myTimer() }, 1000); 
+                                function myTimer() { 
+                                    var d = new Date(); 
+                                    var t = d.toLocaleTimeString(); 
+                                    document.getElementById("h").innerHTML = t; 
+                                }
+                                    </script>
                             <span id="h"></span>
                             <script type="text/javascript">
-                              n = new Date(); if (n.getTimezoneOffset() == 0) t = n.getTime() + (7 * 60 * 60 * 1000); else t = n.getTime(); n.setTime(t); var dn = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"); d = n.getDay(); m = n.getMonth() + 1; y = n.getFullYear()
-                              document.write(dn[d] + ", " + (n.getDate() < 10 ? "0" : "") + n.getDate() + "/" + (m < 10 ? "0" : "") + m + "/" + y)
+                              n = new Date(); 
+                              if (n.getTimezoneOffset() == 0) 
+                              t = n.getTime() + (7 * 60 * 60 * 1000); 
+                              else t = n.getTime(); 
+                              n.setTime(t); 
+                              var dn = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"); 
+                              d = n.getDay(); 
+                              m = n.getMonth() + 1;
+                               y = n.getFullYear()
+                                document.write(dn[d] + ", " + (n.getDate() < 10 ? "0" : "") + n.getDate() + "/" + (m < 10 ? "0" : "") + m + "/" + y)
                             </script>
-                          </center> 
+                            </center> 
             <div class="company-info">
                 <h1>PMT Shop</h1>
                 <strong>Electronic Shop</strong>
             </div>
             <div class="top-menu">  
-                <a href="signup.html" target="page" onclick="signup=confirm('Do you want to come sign up page?')"; >Sign up</a> |
-                <a href="login.html" target="page" onclick="login=confirm('Do you want to come login page?')"; >Login</a> |
+                <a href="signup.html" target="page" id="DangKy" onclick="signup=confirm('Do you want to come sign up page?')"; >Sign up</a> |
+                <a href="login.html" target="page" id="DangNhap" onclick="login=confirm('Do you want to come login page?')"; >Login</a> |
                 <a href="forgetpassword.html" target="page" onclick="login=confirm('Do you want to come recreate passsword page?')";>Forgot password</a> 
             </div>
             <div class="icon8">
@@ -60,7 +78,7 @@
             </div>
             <form>
                 <input class="search" type="text" name="search" placeholder="Search..">
-              </form>
+            </form>
             </header>
     <nav class="menu">
                 <ul>
@@ -94,6 +112,15 @@
             </li>
             </ul>
         </nav>
+        <!-- <div id="slider">
+            <img class="slide" src="img/1.jpg" stt="0">
+            <img class="slide" src="img/2.jpg" stt="1" style="display: none">
+            <img class="slide" src="img/3.jpg" stt="2" style="display: none">
+            <img class="slide" src="img/4.png" stt="3" style="display: none">
+            <img class="slide" src="img/5.jpg" stt="4" style="display: none">
+            <a href="#" id="prev"><img class="move" src="img/previous.png"></a>
+            <a href="#" id="next"><img class="move" src="img/next.png"></a>
+    </div> -->
     </aside>
         <footer>
             <h2>

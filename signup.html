@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link href="css/form.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/DangKy.js"></script>
 </head> 
 <body>
     <h2>Sign up</h2>
@@ -25,7 +27,7 @@
                     <label for="gioiTinh">Gender</label>
                 </div>
                 <div class="Col-75">
-                    <label><input id="GenderM" type="radio" name="gender" value="male"> Male </label>
+                    <label><input id="GenderM" type="radio" name="gender" value="male" checked="checked"> Male </label>
                     <label><input id="GenderF" type="radio" name="gender" value="female"> Female </label>
                 </div>
             </div>
@@ -35,7 +37,7 @@
                     <label for="ngaySinh">Birthday</label>
                 </div>
                 <div class="Col-75">
-                    <input type="date" name="date" placeholder="mm/dd/yyyy">
+                    <input type="date" name="date" id="sinhnhat" placeholder="mm/dd/yyyy">
                 </div>
                 <br>
             </div>
@@ -44,7 +46,7 @@
                 <div class="Col-25">
                     <label for="ngheNghiep">Career</label>
                 </div>
-                <div class="Col-75">
+                <!-- <div class="Col-75">
                     <input id="List" list="careers" name="career">
                         <datalist id="careers">
                             <option value="Salesman">
@@ -53,7 +55,18 @@
                             <option value="Chef">
                             <option value="Programer">
                         </datalist>
+                </div> -->
+                <div class="Col-75">
+                    <input id="List" list="careers" name="career">
+                        <datalist id="careers">
+                            <option value="Nhân viên bán hàng">
+                            <option value="Giáo viên">
+                            <option value="Học sinh - Sinh viên">
+                            <option value="Đầu bếp">
+                            <option value="Lập trình viên">
+                        </datalist>
                 </div>
+        
                 <br>
             </div>
             
@@ -85,7 +98,8 @@
             </div>
             <br>
                     <div class="Row">
-                    <button class="button" onclick="traloi=confirm('Are you sure you want to sign up?')";><span>Sign up</span></button>
+                        <input type="button" value="Sign Up" onclick="doSignUp()">
+                        <!-- <button class="button" onclick="traloi=confirm('Are you sure you want to sign up?')";><span>Sign up</span></button> -->
                     </div>
         </form>
     </div>
